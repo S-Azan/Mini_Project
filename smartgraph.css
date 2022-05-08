@@ -3,14 +3,14 @@ STYLESHEET FOR JAVAFXGRAPH VISUALIZATION
 */
 
 .graph {
-    -fx-background-color: #F4FFFB;    
+    -fx-background-color: #85ad87;    
 }
 
 .vertex {
     -fx-stroke-width: 3;
-    -fx-stroke: #61B5F1;
+    -fx-stroke: #f5f5f5;
     -fx-stroke-type: inside; /* you should keep this if using arrows */
-    -fx-fill: #B1DFF7;
+    -fx-fill: #daa104;
 }
 
 .vertex-label {
@@ -19,8 +19,8 @@ STYLESHEET FOR JAVAFXGRAPH VISUALIZATION
 
 .edge {
     -fx-stroke-width: 2;
-    -fx-stroke: #FF6D66;  
-    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */  
+    -fx-stroke: #433b8f;  
+    /*-fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */  
     -fx-fill: transparent; /*important for curved edges */
     -fx-stroke-line-cap: round;
     -fx-opacity: 0.8;

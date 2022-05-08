@@ -1,10 +1,11 @@
-package com.jwetherell.algorithms.data_structures;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+
 
 /**
  * Graph. Could be directed or undirected depending on the TYPE enum. A graph is
@@ -427,7 +428,10 @@ public class Graph<T extends Comparable<T>> {
 //            builder.append("[ ").append(from.value).append("(").append(from.weight).append(") ").append("]").append(" -> ")
 //                   .append("[ ").append(to.value).append("(").append(to.weight).append(") ").append("]").append(" = ").append(cost).append("\n");
 //            return builder.toString();
-        	return from.getValue().toString() + "->" + to.getValue().toString();
+//        	return from.getValue().toString() + "->" + to.getValue().toString();
+        	User from = (User) this.from.getValue();
+        	User to = (User) this.to.getValue();
+        	return from + "->" + to;
         }
     }
 

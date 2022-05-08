@@ -14,7 +14,7 @@ public class User implements Comparable<User> {
 	private String Location;
 	private String Age;
 	private String Expertise; //Years of experience
-	private String Contact;
+	//private String Contact;
 	
 	/*
 	 * Default Constructor
@@ -26,20 +26,20 @@ public class User implements Comparable<User> {
 	/*
 	 * Overloaded Constructor
 	 */
-	public User(String Name, String Surname, String Location, String Age, String Expertise, String Contact) {
+	public User(String Name, String Surname, String Location, String Age, String Expertise) {
 		// TODO Auto-generated constructor stub
 		this.Name = Name;
 		this.Surname = Surname;
 		this.Location = Location;
 		this.Age = Age;
 		this.Expertise = Expertise;
-		this.Contact = Contact;
 	}
 	
 	public String toString() {
-		return "{" + Name + " " + Surname + " " + Location + " " + Age + " " + Expertise + " " + Contact + "}";
+//		return "{" + Name + " " + Location + " " + Age + " " + Expertise + " " + Contact + "}";
+		return Name + "," + Location + "," + Age + "," + Expertise ;
 	}
-	
+		
 	public String getName() {
 		return Name;
 	}
@@ -80,25 +80,25 @@ public class User implements Comparable<User> {
 		this.Expertise = Expertise;
 	}
 	
-	public String getContact() {
-		return Contact;
-	}
-	
-	public void setContact(String Contact) {
-		this.Contact = Contact;
-	}
+//	public String getContact() {
+//		return Contact;
+//	}
+//	
+//	public void setContact(String Contact) {
+//		this.Contact = Contact;
+//	}
+
 
 	@Override
 	public int compareTo(User u) {
 		// TODO Auto-generated method stub
-		//if(this.Location.equals(u.Location) && (this.Expertise.equals(u.Expertise) || (this.Age.equals(u.Age)))) {
-		//return 0;
 		
-		while(this.Location.equals(u.Location)) {
-			if(this.Age.equals(u.Age) || this.Expertise.equals(u.Expertise)) {
-				return 0;
-			}
-		}		
+		if(!this.Location.equals(u.Location)) {
+			return -1;
+		}
+		if(this.Age.equals(u.Age) || this.Expertise.equals(u.Expertise)) {
+			return 0;
+		}
 		return 1;
 	}
 
