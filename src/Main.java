@@ -126,18 +126,18 @@ public class Main extends Application {
 //					System.out.println(newEdge.getFromVertex().getValue().getName() + "->" +
 //							newEdge.getToVertex().getValue().getName());
 					
-					edges.add(newEdge);
+					//edges.add(newEdge);
 					smartGraph.insertEdge(v, newUser, newEdge);
 				}
 			}
 						
 			graphView.update();
 
-			txtName.clear();
-			txtSurname.clear();
-			txtLocation.clear();
-			txtAge.clear();
-			txtExpertise.clear();
+			txtName.setText("Name");
+			txtSurname.setText("Surname");
+			txtLocation.setText("Location");
+			txtAge.setText("Age");
+			txtExpertise.setText("Expertise");
 
 		});
 		

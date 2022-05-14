@@ -1,0 +1,1 @@
+java --module-path "C:\UJ\Computer Science\Softwares\openjfx-11sdk\javafx-sdk-11\lib" --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media -jar MP.jar
